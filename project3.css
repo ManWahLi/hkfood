@@ -1,0 +1,237 @@
+/******w*************
+
+    Project 3
+    Name: Man Wawh Li
+    Date: April 22, 2022
+    Description: 
+
+********************/
+
+/*All pages*/
+
+body
+{
+    color: darkblue;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header img
+{
+    display: block;
+    margin: 0px auto 20px auto;
+    width: 30%;
+    opacity: 0.4;
+}
+
+nav ul li
+{
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    flex-basis: 100px;
+    text-align: center;
+    border: solid 1px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.navigation
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover
+{
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+
+a:focus
+{
+    color: blue;
+}
+
+main
+{
+    border: solid 1px;
+    width: 60%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
+    margin: auto;
+}
+
+footer
+{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    font-size: 0.8em;
+}
+
+footer ul li
+{
+    flex-basis: 100px;
+    text-align: center;
+}
+
+footer ul li a 
+{    
+    color: darkslateblue;
+}
+
+footer div
+{
+    text-align: center;
+    color: black;
+}
+
+/*Homepage only*/
+.welcome
+{
+    margin: 0px 20px;
+}
+
+.welcome h1
+{
+    background: linear-gradient(to bottom, rgba(203,96,179,1) 0%,rgba(173,18,131,1) 50%,rgba(222,71,172,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome h2
+{
+    background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(115,177,231,1) 24%,rgba(10,119,213,1) 50%,rgba(83,159,225,1) 79%,rgba(135,188,234,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*Product page only*/
+
+.product
+{
+    padding: 0px;
+}
+
+.product li
+{    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product li:not(:last-child)
+{
+    border-bottom: double;
+}
+
+.product li div:first-child
+{
+    margin: 0px 20px 20px 20px;
+}
+
+.product li div:last-child
+{
+    margin-right: 20px;
+}
+
+.product img
+{
+    width: 200px;
+    height: 200px;
+}
+
+/*About page only*/
+
+.about
+{
+    margin: auto 20px;
+}
+
+.about p:last-child
+{
+    font-size: 0.8em;
+}
+
+/*Contact page only*/
+
+.fields
+{
+    display: flex;    
+    justify-content: center;
+}
+
+.fields ul:last-child
+{
+    flex-basis: 80%;
+}
+
+.fields ul li
+{
+    list-style: none;
+}
+
+.error
+{
+    color: red;
+    font-size: 0.8em;
+}
+
+.buttons
+{
+    text-align: center;
+}
+
+#comment
+{
+    width: 90%;
+    height: 150px;
+}
+
+/*other resolutions*/
+
+@media(max-width: 640px)
+{
+    main
+    {
+        width: 100%;
+    }
+
+    .navigation
+    {
+        display: block;
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .product li
+    {
+        display: block;
+    }
+
+    .product li div:last-child
+    {
+        margin-left: 20px;
+    }
+
+    .fields
+    {
+        display: block;
+    }
+}
